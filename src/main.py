@@ -2,7 +2,7 @@ import json
 import os
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from detector import LEVEL_ORDER, check_point
@@ -13,6 +13,7 @@ from weather_client import get_forecast
 STATE_PATH = Path(__file__).resolve().parent.parent / "state" / "last_alerts.json"
 COOLDOWN_MINUTES = 30
 MAX_WORKERS = 10
+VIETNAM_TZ = timezone(timedelta(hours=7))
 
 
 def load_state() -> dict:
@@ -59,7 +60,7 @@ def main() -> None:
             if alert:
                 alerts.append(alert)
 
-    now = datetime.now()
+    now = datetime.now(VIETNAM_TZ)
     state = load_state()
     cooldowns = state["cooldowns"]
 
