@@ -19,8 +19,10 @@ MAX_WORKERS = 10
 
 def load_state() -> dict:
     if STATE_PATH.exists():
-        return json.loads(STATE_PATH.read_text(encoding="utf-8"))
-    return {}
+        data = json.loads(STATE_PATH.read_text(encoding="utf-8"))
+        if "cooldowns" in data:
+            return data
+    return {"cooldowns": {}, "last_raining_zones": []}
 
 
 def save_state(state: dict) -> None:
@@ -28,8 +30,8 @@ def save_state(state: dict) -> None:
     STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def in_cooldown(state: dict, zone: str, now: datetime) -> bool:
-    last = state.get(zone)
+def in_cooldown(cooldowns: dict, zone: str, now: datetime) -> bool:
+    last = cooldowns.get(zone)
     if not last:
         return False
     last_time = datetime.fromisoformat(last)
@@ -60,39 +62,48 @@ def main() -> None:
             if alert:
                 alerts.append(alert)
 
-    if not alerts:
-        print("No rain detected this cycle.")
-        return
-
     now = datetime.now()
     state = load_state()
-    fresh_alerts = [a for a in alerts if not in_cooldown(state, a["name"], now)]
+    cooldowns = state["cooldowns"]
 
-    if not fresh_alerts:
-        print(f"{len(alerts)} alert(s) detected but all zones in cooldown.")
-        return
+    current_alert_by_zone = {a["name"]: a for a in alerts}
+    current_raining_zones = set(current_alert_by_zone)
+    previous_raining_zones = set(state.get("last_raining_zones", []))
+    stopped_zones = sorted(previous_raining_zones - current_raining_zones)
 
-    groups: dict[str, list[str]] = {}
-    for a in fresh_alerts:
-        groups.setdefault(a["level"], []).append(a["name"])
-        state[a["name"]] = now.isoformat()
+    fresh_alerts = [a for a in current_alert_by_zone.values() if not in_cooldown(cooldowns, a["name"], now)]
 
-    rows = [(level, ", ".join(groups[level])) for level in LEVEL_ORDER if level in groups]
+    if fresh_alerts:
+        groups: dict[str, list[str]] = {}
+        for a in fresh_alerts:
+            groups.setdefault(a["level"], []).append(a["name"])
+            cooldowns[a["name"]] = now.isoformat()
 
-    col_width = max(len(level) for level, _ in rows) + 1
-    lines = ["<b>Canh bao mua - TP.HCM</b>", "<pre>"]
-    for level, names in rows:
-        lines.append(f"{level.ljust(col_width)}| {names}")
-    lines.append("</pre>")
-    send_message(bot_token, chat_id, "\n".join(lines))
+        rows = [(level, groups[level]) for level in LEVEL_ORDER if level in groups]
 
-    image_path = Path(tempfile.gettempdir()) / "rain_alert.png"
-    title = f"Canh bao mua TP.HCM - {now.strftime('%H:%M %d/%m/%Y')}"
-    render_table_image(rows, image_path, title=title)
-    send_photo(bot_token, chat_id, image_path, caption=f"{len(fresh_alerts)} khu vuc dang/sap mua")
+        col_width = max(len(level) for level, _ in rows) + 1
+        lines = ["<b>Canh bao mua - TP.HCM</b>", "<pre>"]
+        for level, names in rows:
+            lines.append(f"{level.ljust(col_width)}| {', '.join(names)}")
+        lines.append("</pre>")
+        send_message(bot_token, chat_id, "\n".join(lines))
 
+        image_path = Path(tempfile.gettempdir()) / "rain_alert.png"
+        title = f"Canh bao mua TP.HCM - {now.strftime('%H:%M %d/%m/%Y')}"
+        render_table_image(rows, image_path, title=title)
+        send_photo(bot_token, chat_id, image_path, caption=f"{len(fresh_alerts)} khu vuc dang/sap mua")
+        print(f"Sent alert for {len(fresh_alerts)} zone(s).")
+    else:
+        print(f"{len(alerts)} alert(s) detected but all zones in cooldown or no rain.")
+
+    if stopped_zones:
+        send_message(bot_token, chat_id, "<b>Da het mua:</b> " + ", ".join(stopped_zones))
+        for zone in stopped_zones:
+            cooldowns.pop(zone, None)
+        print(f"Rain stopped at {len(stopped_zones)} zone(s).")
+
+    state["last_raining_zones"] = sorted(current_raining_zones)
     save_state(state)
-    print(f"Sent alert for {len(fresh_alerts)} zone(s).")
 
 
 if __name__ == "__main__":
