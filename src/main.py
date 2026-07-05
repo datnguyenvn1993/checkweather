@@ -1,13 +1,15 @@
 import json
 import os
 import sys
+import tempfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
 from pathlib import Path
 
-from detector import check_point
+from detector import LEVEL_ORDER, check_point
 from grid import sample_points
-from notifier import send_message
+from notifier import send_message, send_photo
+from render import render_table_image
 from weather_client import get_forecast
 
 STATE_PATH = Path(__file__).resolve().parent.parent / "state" / "last_alerts.json"
@@ -70,13 +72,25 @@ def main() -> None:
         print(f"{len(alerts)} alert(s) detected but all zones in cooldown.")
         return
 
-    lines = ["<b>Canh bao mua - TP.HCM</b>"]
+    groups: dict[str, list[str]] = {}
     for a in fresh_alerts:
-        lines.append(f"- <b>{a['name']}</b>: {a['detail']}")
+        groups.setdefault(a["level"], []).append(a["name"])
         state[a["name"]] = now.isoformat()
 
-    message = "\n".join(lines)
-    send_message(bot_token, chat_id, message)
+    rows = [(level, ", ".join(groups[level])) for level in LEVEL_ORDER if level in groups]
+
+    col_width = max(len(level) for level, _ in rows) + 1
+    lines = ["<b>Canh bao mua - TP.HCM</b>", "<pre>"]
+    for level, names in rows:
+        lines.append(f"{level.ljust(col_width)}| {names}")
+    lines.append("</pre>")
+    send_message(bot_token, chat_id, "\n".join(lines))
+
+    image_path = Path(tempfile.gettempdir()) / "rain_alert.png"
+    title = f"Canh bao mua TP.HCM - {now.strftime('%H:%M %d/%m/%Y')}"
+    render_table_image(rows, image_path, title=title)
+    send_photo(bot_token, chat_id, image_path, caption=f"{len(fresh_alerts)} khu vuc dang/sap mua")
+
     save_state(state)
     print(f"Sent alert for {len(fresh_alerts)} zone(s).")
 

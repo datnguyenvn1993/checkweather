@@ -2,8 +2,13 @@ from datetime import datetime
 
 RAIN_CHANCE_THRESHOLD = 60  # % chance_of_rain to count as "sap mua"
 CURRENT_PRECIP_THRESHOLD_MM = 0.1
+HEAVY_RAIN_MM = 4.0
+MODERATE_RAIN_MM = 1.0
 LOOKAHEAD_HOURS = 2
 RAIN_KEYWORDS = ("mua", "rain", "drizzle", "mưa", "giông", "dông", "thunderstorm")
+
+# Ordered from most to least severe; used to sort groups in the alert output.
+LEVEL_ORDER = ["Mua to", "Mua vua", "Mua nhe", "Sap mua"]
 
 TIME_FMT = "%Y-%m-%d %H:%M"
 
@@ -11,6 +16,14 @@ TIME_FMT = "%Y-%m-%d %H:%M"
 def _looks_like_rain(condition_text: str) -> bool:
     text = condition_text.lower()
     return any(keyword in text for keyword in RAIN_KEYWORDS)
+
+
+def _current_rain_level(precip_mm: float) -> str:
+    if precip_mm >= HEAVY_RAIN_MM:
+        return "Mua to"
+    if precip_mm >= MODERATE_RAIN_MM:
+        return "Mua vua"
+    return "Mua nhe"
 
 
 def check_point(point: dict, forecast_json: dict) -> dict | None:
@@ -29,6 +42,7 @@ def check_point(point: dict, forecast_json: dict) -> dict | None:
             "lat": point["lat"],
             "lon": point["lon"],
             "kind": "dang mua",
+            "level": _current_rain_level(current_precip),
             "detail": f"{current_condition}, {current_precip}mm/h",
         }
 
@@ -43,6 +57,7 @@ def check_point(point: dict, forecast_json: dict) -> dict | None:
                 "lat": point["lat"],
                 "lon": point["lon"],
                 "kind": "sap mua",
+                "level": "Sap mua",
                 "detail": f"{chance}% kha nang mua luc {hour_label} ({hour['condition']['text']})",
             }
 
