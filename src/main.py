@@ -1,15 +1,13 @@
 import json
 import os
 import sys
-import tempfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
 from pathlib import Path
 
 from detector import LEVEL_ORDER, check_point
 from grid import sample_points
-from notifier import send_message, send_photo
-from render import render_table_image
+from notifier_teams import send_rain_alert, send_text
 from weather_client import get_forecast
 
 STATE_PATH = Path(__file__).resolve().parent.parent / "state" / "last_alerts.json"
@@ -40,8 +38,7 @@ def in_cooldown(cooldowns: dict, zone: str, now: datetime) -> bool:
 
 def main() -> None:
     api_key = os.environ["WEATHERAPI_KEY"]
-    bot_token = os.environ["TELEGRAM_BOT_TOKEN"]
-    chat_id = os.environ["TELEGRAM_CHAT_ID"]
+    webhook_url = os.environ["TEAMS_WEBHOOK_URL"]
 
     points = sample_points()
     print(f"Checking {len(points)} points...")
@@ -80,24 +77,15 @@ def main() -> None:
             cooldowns[a["name"]] = now.isoformat()
 
         rows = [(level, groups[level]) for level in LEVEL_ORDER if level in groups]
-
-        col_width = max(len(level) for level, _ in rows) + 1
-        lines = ["<b>Canh bao mua - TP.HCM</b>", "<pre>"]
-        for level, names in rows:
-            lines.append(f"{level.ljust(col_width)}| {', '.join(names)}")
-        lines.append("</pre>")
-        send_message(bot_token, chat_id, "\n".join(lines))
-
-        image_path = Path(tempfile.gettempdir()) / "rain_alert.png"
         title = f"Canh bao mua TP.HCM - {now.strftime('%H:%M %d/%m/%Y')}"
-        render_table_image(rows, image_path, title=title)
-        send_photo(bot_token, chat_id, image_path, caption=f"{len(fresh_alerts)} khu vuc dang/sap mua")
+        send_rain_alert(webhook_url, title, rows)
         print(f"Sent alert for {len(fresh_alerts)} zone(s).")
     else:
         print(f"{len(alerts)} alert(s) detected but all zones in cooldown or no rain.")
 
     if stopped_zones:
-        send_message(bot_token, chat_id, "<b>Da het mua:</b> " + ", ".join(stopped_zones))
+        title = f"Da het mua - {now.strftime('%H:%M %d/%m/%Y')}"
+        send_text(webhook_url, title, ", ".join(stopped_zones), color="good")
         for zone in stopped_zones:
             cooldowns.pop(zone, None)
         print(f"Rain stopped at {len(stopped_zones)} zone(s).")
