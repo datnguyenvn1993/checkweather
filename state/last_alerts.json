@@ -1,22 +1,12 @@
 {
   "cooldowns": {
-    "Aeon Mall Binh Tan": "2026-07-06T22:42:01.075958+07:00",
-    "Cho Binh Tay (Q6)": "2026-07-06T22:37:00.650854+07:00",
-    "Khu du lich Suoi Tien (TP Thu Duc)": "2026-07-06T22:37:00.650854+07:00",
     "Vinhomes Grand Park (TP Thu Duc)": "2026-07-06T22:42:01.075958+07:00",
     "Ben xe Mien Dong moi (TP Thu Duc)": "2026-07-06T22:37:00.650854+07:00",
-    "Thao Cam Vien (Q1)": "2026-07-06T22:27:00.011689+07:00",
-    "Diamond Plaza (Q1)": "2026-07-06T22:37:00.650854+07:00",
-    "Ga Sai Gon (Q3)": "2026-07-06T22:42:01.075958+07:00"
+    "Gigamall (TP Thu Duc)": "2026-07-06T22:47:02.603453+07:00"
   },
   "last_raining_zones": [
-    "Aeon Mall Binh Tan",
     "Ben xe Mien Dong moi (TP Thu Duc)",
-    "Cho Binh Tay (Q6)",
-    "Diamond Plaza (Q1)",
-    "Ga Sai Gon (Q3)",
-    "Khu du lich Suoi Tien (TP Thu Duc)",
-    "Thao Cam Vien (Q1)",
+    "Gigamall (TP Thu Duc)",
     "Vinhomes Grand Park (TP Thu Duc)"
   ]
 }
