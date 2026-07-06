@@ -20,9 +20,11 @@
     "Ga Sai Gon (Q3)": "2026-07-07T00:37:00.814150+07:00",
     "Cho Ben Thanh (Q1)": "2026-07-07T00:37:00.814150+07:00",
     "Crescent Mall (Q7)": "2026-07-07T00:42:01.809898+07:00",
-    "Celadon City (Tan Phu)": "2026-07-07T00:47:00.050706+07:00"
+    "Celadon City (Tan Phu)": "2026-07-07T00:47:00.050706+07:00",
+    "Aeon Mall Binh Tan": "2026-07-07T00:51:59.637170+07:00"
   },
   "last_raining_zones": [
+    "Aeon Mall Binh Tan",
     "Aeon Mall Tan Phu Celadon",
     "BV Cho Ray (Q5)",
     "BV Dai hoc Y Duoc TP.HCM (Q5)",
