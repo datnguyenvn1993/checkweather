@@ -1,4 +1,26 @@
 {
-  "cooldowns": {},
-  "last_raining_zones": []
+  "cooldowns": {
+    "Ben Bach Dang (Q1)": "2026-07-06T13:21:55.509245+07:00",
+    "Van Hanh Mall (Q10)": "2026-07-06T13:21:55.509245+07:00",
+    "Ben xe Mien Tay (Binh Tan)": "2026-07-06T13:21:55.509245+07:00",
+    "Cong vien Dam Sen (Q11)": "2026-07-06T13:21:55.509245+07:00",
+    "Pho di bo Nguyen Hue (Q1)": "2026-07-06T13:21:55.509245+07:00",
+    "Vincom Landmark 81 (Binh Thanh)": "2026-07-06T13:21:55.509245+07:00",
+    "Aeon Mall Binh Tan": "2026-07-06T13:21:55.509245+07:00",
+    "Crescent Mall (Q7)": "2026-07-06T13:21:55.509245+07:00",
+    "BV Cho Ray (Q5)": "2026-07-06T13:21:55.509245+07:00",
+    "Vinhomes Grand Park (TP Thu Duc)": "2026-07-06T13:21:55.509245+07:00"
+  },
+  "last_raining_zones": [
+    "Aeon Mall Binh Tan",
+    "BV Cho Ray (Q5)",
+    "Ben Bach Dang (Q1)",
+    "Ben xe Mien Tay (Binh Tan)",
+    "Cong vien Dam Sen (Q11)",
+    "Crescent Mall (Q7)",
+    "Pho di bo Nguyen Hue (Q1)",
+    "Van Hanh Mall (Q10)",
+    "Vincom Landmark 81 (Binh Thanh)",
+    "Vinhomes Grand Park (TP Thu Duc)"
+  ]
 }
