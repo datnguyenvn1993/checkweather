@@ -15,7 +15,6 @@
     "Cho Ben Thanh (Q1)": "2026-07-06T22:01:59.138969+07:00",
     "Diamond Plaza (Q1)": "2026-07-06T22:01:59.138969+07:00",
     "BV Cho Ray (Q5)": "2026-07-06T22:01:59.138969+07:00",
-    "San bay Tan Son Nhat (Tan Binh)": "2026-07-06T22:12:01.035989+07:00",
     "Ben xe Mien Dong moi (TP Thu Duc)": "2026-07-06T22:01:59.138969+07:00",
     "BV Dai hoc Y Duoc TP.HCM (Q5)": "2026-07-06T21:51:59.317753+07:00",
     "Celadon City (Tan Phu)": "2026-07-06T21:51:59.317753+07:00",
@@ -23,7 +22,8 @@
     "Ben Bach Dang (Q1)": "2026-07-06T22:12:01.035989+07:00",
     "Pho di bo Nguyen Hue (Q1)": "2026-07-06T21:57:01.370060+07:00",
     "Aeon Mall Tan Phu Celadon": "2026-07-06T22:01:59.138969+07:00",
-    "Van Hanh Mall (Q10)": "2026-07-06T22:12:01.035989+07:00"
+    "Van Hanh Mall (Q10)": "2026-07-06T22:12:01.035989+07:00",
+    "Ben xe Mien Tay (Binh Tan)": "2026-07-06T22:16:58.733458+07:00"
   },
   "last_raining_zones": [
     "Aeon Mall Binh Tan",
@@ -32,6 +32,7 @@
     "BV Dai hoc Y Duoc TP.HCM (Q5)",
     "Ben Bach Dang (Q1)",
     "Ben xe Mien Dong moi (TP Thu Duc)",
+    "Ben xe Mien Tay (Binh Tan)",
     "Celadon City (Tan Phu)",
     "Cho Ben Thanh (Q1)",
     "Cho Binh Tay (Q6)",
@@ -44,7 +45,6 @@
     "Khu du lich Suoi Tien (TP Thu Duc)",
     "Pho di bo Nguyen Hue (Q1)",
     "SC VivoCity (Q7)",
-    "San bay Tan Son Nhat (Tan Binh)",
     "Thao Cam Vien (Q1)",
     "Van Hanh Mall (Q10)",
     "Vincom Center Dong Khoi (Q1)",
