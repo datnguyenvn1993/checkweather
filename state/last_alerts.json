@@ -1,8 +1,8 @@
 {
   "cooldowns": {
-    "Diamond Plaza (Q1)": "2026-07-06T18:07:01.801830+07:00",
-    "Emart Go Vap": "2026-07-06T18:07:01.801830+07:00",
-    "San bay Tan Son Nhat (Tan Binh)": "2026-07-06T18:07:01.801830+07:00",
+    "Diamond Plaza (Q1)": "2026-07-06T18:37:02.015654+07:00",
+    "Emart Go Vap": "2026-07-06T18:37:02.015654+07:00",
+    "San bay Tan Son Nhat (Tan Binh)": "2026-07-06T18:37:02.015654+07:00",
     "Thao Cam Vien (Q1)": "2026-07-06T18:13:07.162275+07:00",
     "Ben xe Mien Tay (Binh Tan)": "2026-07-06T18:17:04.872235+07:00",
     "SC VivoCity (Q7)": "2026-07-06T18:17:04.872235+07:00",
@@ -13,14 +13,15 @@
     "Ga Sai Gon (Q3)": "2026-07-06T18:17:04.872235+07:00",
     "Vincom Center Dong Khoi (Q1)": "2026-07-06T18:17:04.872235+07:00",
     "Cho Ben Thanh (Q1)": "2026-07-06T18:26:59.127018+07:00",
-    "Vincom Landmark 81 (Binh Thanh)": "2026-07-06T18:01:58.858342+07:00",
-    "Cho Binh Tay (Q6)": "2026-07-06T18:07:01.801830+07:00",
+    "Vincom Landmark 81 (Binh Thanh)": "2026-07-06T18:37:02.015654+07:00",
+    "Cho Binh Tay (Q6)": "2026-07-06T18:37:02.015654+07:00",
     "Celadon City (Tan Phu)": "2026-07-06T18:13:07.162275+07:00",
     "BV Cho Ray (Q5)": "2026-07-06T18:17:04.872235+07:00",
-    "Gigamall (TP Thu Duc)": "2026-07-06T18:07:01.801830+07:00",
-    "BV Dai hoc Y Duoc TP.HCM (Q5)": "2026-07-06T18:07:01.801830+07:00",
+    "Gigamall (TP Thu Duc)": "2026-07-06T18:37:02.015654+07:00",
+    "BV Dai hoc Y Duoc TP.HCM (Q5)": "2026-07-06T18:37:02.015654+07:00",
     "Aeon Mall Tan Phu Celadon": "2026-07-06T18:13:07.162275+07:00",
-    "Pho di bo Nguyen Hue (Q1)": "2026-07-06T18:17:04.872235+07:00"
+    "Pho di bo Nguyen Hue (Q1)": "2026-07-06T18:17:04.872235+07:00",
+    "Van Hanh Mall (Q10)": "2026-07-06T18:37:02.015654+07:00"
   },
   "last_raining_zones": [
     "Aeon Mall Binh Tan",
@@ -42,6 +43,7 @@
     "SC VivoCity (Q7)",
     "San bay Tan Son Nhat (Tan Binh)",
     "Thao Cam Vien (Q1)",
+    "Van Hanh Mall (Q10)",
     "Vincom Center Dong Khoi (Q1)",
     "Vincom Landmark 81 (Binh Thanh)"
   ]
