@@ -19,11 +19,12 @@
     "Ben xe Mien Dong moi (TP Thu Duc)": "2026-07-06T14:01:57.709598+07:00",
     "Ga Sai Gon (Q3)": "2026-07-06T14:01:57.709598+07:00",
     "San bay Tan Son Nhat (Tan Binh)": "2026-07-06T14:01:57.709598+07:00",
-    "Ben Bach Dang (Q1)": "2026-07-06T13:37:02.494415+07:00",
-    "Emart Go Vap": "2026-07-06T13:41:58.306886+07:00",
+    "Ben Bach Dang (Q1)": "2026-07-06T14:11:59.773212+07:00",
+    "Emart Go Vap": "2026-07-06T14:11:59.773212+07:00",
     "Van Hanh Mall (Q10)": "2026-07-06T13:51:56.036237+07:00",
     "Thao Cam Vien (Q1)": "2026-07-06T14:01:57.709598+07:00",
-    "Cho Binh Tay (Q6)": "2026-07-06T14:06:57.814275+07:00"
+    "Cho Binh Tay (Q6)": "2026-07-06T14:06:57.814275+07:00",
+    "Vinhomes Grand Park (TP Thu Duc)": "2026-07-06T14:11:59.773212+07:00"
   },
   "last_raining_zones": [
     "Aeon Mall Binh Tan",
@@ -49,6 +50,7 @@
     "Thao Cam Vien (Q1)",
     "Van Hanh Mall (Q10)",
     "Vincom Center Dong Khoi (Q1)",
-    "Vincom Landmark 81 (Binh Thanh)"
+    "Vincom Landmark 81 (Binh Thanh)",
+    "Vinhomes Grand Park (TP Thu Duc)"
   ]
 }
