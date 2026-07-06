@@ -9,7 +9,6 @@
     "Vincom Center Dong Khoi (Q1)": "2026-07-06T21:37:00.531766+07:00",
     "Vincom Landmark 81 (Binh Thanh)": "2026-07-06T21:27:03.922752+07:00",
     "Cho Binh Tay (Q6)": "2026-07-06T21:27:03.922752+07:00",
-    "Aeon Mall Tan Phu Celadon": "2026-07-06T21:27:03.922752+07:00",
     "Van Hanh Mall (Q10)": "2026-07-06T21:27:03.922752+07:00",
     "Khu du lich Suoi Tien (TP Thu Duc)": "2026-07-06T21:27:03.922752+07:00",
     "Gigamall (TP Thu Duc)": "2026-07-06T21:37:00.531766+07:00",
@@ -23,11 +22,11 @@
     "BV Dai hoc Y Duoc TP.HCM (Q5)": "2026-07-06T21:51:59.317753+07:00",
     "Celadon City (Tan Phu)": "2026-07-06T21:51:59.317753+07:00",
     "SC VivoCity (Q7)": "2026-07-06T21:27:03.922752+07:00",
-    "Ben Bach Dang (Q1)": "2026-07-06T21:37:00.531766+07:00"
+    "Ben Bach Dang (Q1)": "2026-07-06T21:37:00.531766+07:00",
+    "Pho di bo Nguyen Hue (Q1)": "2026-07-06T21:57:01.370060+07:00"
   },
   "last_raining_zones": [
     "Aeon Mall Binh Tan",
-    "Aeon Mall Tan Phu Celadon",
     "BV Cho Ray (Q5)",
     "BV Dai hoc Y Duoc TP.HCM (Q5)",
     "Ben Bach Dang (Q1)",
@@ -43,6 +42,7 @@
     "Ga Sai Gon (Q3)",
     "Gigamall (TP Thu Duc)",
     "Khu du lich Suoi Tien (TP Thu Duc)",
+    "Pho di bo Nguyen Hue (Q1)",
     "SC VivoCity (Q7)",
     "San bay Tan Son Nhat (Tan Binh)",
     "Thao Cam Vien (Q1)",
