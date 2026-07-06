@@ -1,16 +1,4 @@
 {
-  "cooldowns": {
-    "Vincom Landmark 81 (Binh Thanh)": "2026-07-07T01:57:14.476684+07:00",
-    "San bay Tan Son Nhat (Tan Binh)": "2026-07-07T01:57:14.476684+07:00",
-    "Celadon City (Tan Phu)": "2026-07-07T01:51:58.296002+07:00",
-    "Emart Go Vap": "2026-07-07T01:57:14.476684+07:00",
-    "Gigamall (TP Thu Duc)": "2026-07-07T01:51:58.296002+07:00"
-  },
-  "last_raining_zones": [
-    "Celadon City (Tan Phu)",
-    "Emart Go Vap",
-    "Gigamall (TP Thu Duc)",
-    "San bay Tan Son Nhat (Tan Binh)",
-    "Vincom Landmark 81 (Binh Thanh)"
-  ]
+  "cooldowns": {},
+  "last_raining_zones": []
 }
