@@ -1,8 +1,4 @@
 {
-  "cooldowns": {
-    "Khu du lich Suoi Tien (TP Thu Duc)": "2026-07-06T22:51:57.405786+07:00"
-  },
-  "last_raining_zones": [
-    "Khu du lich Suoi Tien (TP Thu Duc)"
-  ]
+  "cooldowns": {},
+  "last_raining_zones": []
 }
