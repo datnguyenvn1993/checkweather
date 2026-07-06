@@ -23,7 +23,8 @@
     "SC VivoCity (Q7)": "2026-07-06T15:06:59.403301+07:00",
     "San bay Tan Son Nhat (Tan Binh)": "2026-07-06T15:12:00.439068+07:00",
     "Celadon City (Tan Phu)": "2026-07-06T15:12:00.439068+07:00",
-    "Ben xe Mien Dong moi (TP Thu Duc)": "2026-07-06T15:12:00.439068+07:00"
+    "Ben xe Mien Dong moi (TP Thu Duc)": "2026-07-06T15:12:00.439068+07:00",
+    "Vincom Center Dong Khoi (Q1)": "2026-07-06T15:21:56.725924+07:00"
   },
   "last_raining_zones": [
     "Aeon Mall Binh Tan",
@@ -48,6 +49,7 @@
     "San bay Tan Son Nhat (Tan Binh)",
     "Thao Cam Vien (Q1)",
     "Van Hanh Mall (Q10)",
+    "Vincom Center Dong Khoi (Q1)",
     "Vincom Landmark 81 (Binh Thanh)",
     "Vinhomes Grand Park (TP Thu Duc)"
   ]
