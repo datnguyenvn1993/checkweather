@@ -1,6 +1,5 @@
 {
   "cooldowns": {
-    "Ben Bach Dang (Q1)": "2026-07-06T13:21:55.509245+07:00",
     "Van Hanh Mall (Q10)": "2026-07-06T13:21:55.509245+07:00",
     "Ben xe Mien Tay (Binh Tan)": "2026-07-06T13:21:55.509245+07:00",
     "Cong vien Dam Sen (Q11)": "2026-07-06T13:21:55.509245+07:00",
@@ -23,18 +22,19 @@
     "Ga Sai Gon (Q3)": "2026-07-06T13:26:59.391666+07:00",
     "San bay Tan Son Nhat (Tan Binh)": "2026-07-06T13:26:59.391666+07:00",
     "Emart Go Vap": "2026-07-06T13:26:59.391666+07:00",
-    "Thao Cam Vien (Q1)": "2026-07-06T13:26:59.391666+07:00"
+    "Thao Cam Vien (Q1)": "2026-07-06T13:26:59.391666+07:00",
+    "Cho Binh Tay (Q6)": "2026-07-06T13:31:58.381851+07:00"
   },
   "last_raining_zones": [
     "Aeon Mall Binh Tan",
     "Aeon Mall Tan Phu Celadon",
     "BV Cho Ray (Q5)",
     "BV Dai hoc Y Duoc TP.HCM (Q5)",
-    "Ben Bach Dang (Q1)",
     "Ben xe Mien Dong moi (TP Thu Duc)",
     "Ben xe Mien Tay (Binh Tan)",
     "Celadon City (Tan Phu)",
     "Cho Ben Thanh (Q1)",
+    "Cho Binh Tay (Q6)",
     "Cong vien Dam Sen (Q11)",
     "Crescent Mall (Q7)",
     "Diamond Plaza (Q1)",
