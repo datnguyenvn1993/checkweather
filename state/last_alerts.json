@@ -6,7 +6,6 @@
     "Emart Go Vap": "2026-07-06T17:02:02.159564+07:00",
     "San bay Tan Son Nhat (Tan Binh)": "2026-07-06T17:02:02.159564+07:00",
     "Gigamall (TP Thu Duc)": "2026-07-06T17:02:02.159564+07:00",
-    "Vincom Landmark 81 (Binh Thanh)": "2026-07-06T17:02:02.159564+07:00",
     "Thao Cam Vien (Q1)": "2026-07-06T17:07:00.364437+07:00",
     "BV Dai hoc Y Duoc TP.HCM (Q5)": "2026-07-06T17:12:00.521394+07:00",
     "Pho di bo Nguyen Hue (Q1)": "2026-07-06T17:12:00.521394+07:00",
@@ -20,7 +19,8 @@
     "Crescent Mall (Q7)": "2026-07-06T17:12:00.521394+07:00",
     "Cong vien Dam Sen (Q11)": "2026-07-06T17:12:00.521394+07:00",
     "Ga Sai Gon (Q3)": "2026-07-06T17:12:00.521394+07:00",
-    "Vincom Center Dong Khoi (Q1)": "2026-07-06T17:12:00.521394+07:00"
+    "Vincom Center Dong Khoi (Q1)": "2026-07-06T17:12:00.521394+07:00",
+    "Cho Ben Thanh (Q1)": "2026-07-06T17:21:58.672745+07:00"
   },
   "last_raining_zones": [
     "Aeon Mall Binh Tan",
@@ -30,6 +30,7 @@
     "Ben Bach Dang (Q1)",
     "Ben xe Mien Tay (Binh Tan)",
     "Celadon City (Tan Phu)",
+    "Cho Ben Thanh (Q1)",
     "Cho Binh Tay (Q6)",
     "Cong vien Dam Sen (Q11)",
     "Crescent Mall (Q7)",
@@ -42,7 +43,6 @@
     "San bay Tan Son Nhat (Tan Binh)",
     "Thao Cam Vien (Q1)",
     "Van Hanh Mall (Q10)",
-    "Vincom Center Dong Khoi (Q1)",
-    "Vincom Landmark 81 (Binh Thanh)"
+    "Vincom Center Dong Khoi (Q1)"
   ]
 }
