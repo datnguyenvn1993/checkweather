@@ -5,17 +5,11 @@ CURRENT_PRECIP_THRESHOLD_MM = 0.1
 HEAVY_RAIN_MM = 4.0
 MODERATE_RAIN_MM = 1.0
 LOOKAHEAD_HOURS = 2
-RAIN_KEYWORDS = ("mua", "rain", "drizzle", "mưa", "giông", "dông", "thunderstorm")
 
 # Ordered from most to least severe; used to sort groups in the alert output.
 LEVEL_ORDER = ["Mua to", "Mua vua", "Mua nhe", "Sap mua"]
 
 TIME_FMT = "%Y-%m-%d %H:%M"
-
-
-def _looks_like_rain(condition_text: str) -> bool:
-    text = condition_text.lower()
-    return any(keyword in text for keyword in RAIN_KEYWORDS)
 
 
 def _current_rain_level(precip_mm: float) -> str:
@@ -36,7 +30,7 @@ def check_point(point: dict, forecast_json: dict) -> dict | None:
 
     current_precip = current.get("precip_mm", 0) or 0
     current_condition = current["condition"]["text"]
-    if current_precip >= CURRENT_PRECIP_THRESHOLD_MM or _looks_like_rain(current_condition):
+    if current_precip >= CURRENT_PRECIP_THRESHOLD_MM:
         return {
             "name": point["name"],
             "lat": point["lat"],
