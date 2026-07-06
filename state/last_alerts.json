@@ -2,10 +2,12 @@
   "cooldowns": {
     "Vinhomes Grand Park (TP Thu Duc)": "2026-07-06T16:47:01.521036+07:00",
     "Khu du lich Suoi Tien (TP Thu Duc)": "2026-07-06T16:47:01.521036+07:00",
-    "Ben xe Mien Dong moi (TP Thu Duc)": "2026-07-06T16:47:01.521036+07:00"
+    "Ben xe Mien Dong moi (TP Thu Duc)": "2026-07-06T16:47:01.521036+07:00",
+    "Gigamall (TP Thu Duc)": "2026-07-06T16:51:58.066475+07:00"
   },
   "last_raining_zones": [
     "Ben xe Mien Dong moi (TP Thu Duc)",
+    "Gigamall (TP Thu Duc)",
     "Khu du lich Suoi Tien (TP Thu Duc)",
     "Vinhomes Grand Park (TP Thu Duc)"
   ]
