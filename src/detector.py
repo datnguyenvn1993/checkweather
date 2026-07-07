@@ -6,10 +6,19 @@ HEAVY_RAIN_MM = 4.0
 MODERATE_RAIN_MM = 1.0
 LOOKAHEAD_HOURS = 2
 
+# Neu condition text la mot trong cac gia tri "troi quang" nay, khong bao "dang
+# mua" du precip_mm vuot nguong - vi precip_mm co the la so lieu tich luy cu,
+# tre so voi thoi tiet thuc te hien tai.
+CLEAR_CONDITIONS = {"nắng", "trời quang", "sunny", "clear"}
+
 # Ordered from most to least severe; used to sort groups in the alert output.
 LEVEL_ORDER = ["Mua to", "Mua vua", "Mua nhe", "Sap mua"]
 
 TIME_FMT = "%Y-%m-%d %H:%M"
+
+
+def _looks_clear(condition_text: str) -> bool:
+    return condition_text.strip().lower() in CLEAR_CONDITIONS
 
 
 def _current_rain_level(precip_mm: float) -> str:
@@ -30,7 +39,7 @@ def check_point(point: dict, forecast_json: dict) -> dict | None:
 
     current_precip = current.get("precip_mm", 0) or 0
     current_condition = current["condition"]["text"]
-    if current_precip >= CURRENT_PRECIP_THRESHOLD_MM:
+    if current_precip >= CURRENT_PRECIP_THRESHOLD_MM and not _looks_clear(current_condition):
         return {
             "name": point["name"],
             "lat": point["lat"],

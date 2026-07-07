@@ -74,7 +74,7 @@ def main() -> None:
     if fresh_alerts:
         groups: dict[str, list[str]] = {}
         for a in fresh_alerts:
-            groups.setdefault(a["level"], []).append(a["name"])
+            groups.setdefault(a["level"], []).append(f"{a['name']} ({a['detail']})")
             cooldowns[a["name"]] = now.isoformat()
 
         rows = [(level, groups[level]) for level in LEVEL_ORDER if level in groups]
