@@ -1,6 +1,6 @@
 {
   "cooldowns": {
-    "Ben xe Mien Dong moi (TP Thu Duc)": "2026-07-07T08:11:58.016814+07:00",
+    "Ben xe Mien Dong moi (TP Thu Duc)": "2026-07-07T09:52:39.942433+07:00",
     "Vinhomes Grand Park (TP Thu Duc)": "2026-07-07T08:11:58.016814+07:00",
     "Aeon Mall Tan Phu Celadon": "2026-07-07T08:37:09.552414+07:00",
     "Emart Go Vap": "2026-07-07T08:37:09.552414+07:00",
@@ -8,5 +8,7 @@
     "Vincom Center Dong Khoi (Q1)": "2026-07-07T08:31:59.115681+07:00",
     "Vincom Landmark 81 (Binh Thanh)": "2026-07-07T08:37:09.552414+07:00"
   },
-  "last_raining_zones": []
+  "last_raining_zones": [
+    "Ben xe Mien Dong moi (TP Thu Duc)"
+  ]
 }
