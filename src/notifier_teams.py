@@ -8,7 +8,6 @@ LEVEL_COLORS = {
     "Mua to": "attention",
     "Mua vua": "warning",
     "Mua nhe": "accent",
-    "Sap mua": "default",
 }
 
 
