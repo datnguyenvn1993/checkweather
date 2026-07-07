@@ -87,8 +87,6 @@ def main() -> None:
     if stopped_zones:
         title = f"Da het mua - {now.strftime('%H:%M %d/%m/%Y')}"
         send_text(webhook_url, title, ", ".join(stopped_zones), color="good")
-        for zone in stopped_zones:
-            cooldowns.pop(zone, None)
         print(f"Rain stopped at {len(stopped_zones)} zone(s).")
 
     state["last_raining_zones"] = sorted(current_raining_zones)

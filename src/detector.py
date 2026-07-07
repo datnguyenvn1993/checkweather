@@ -1,7 +1,7 @@
 from datetime import datetime
 
-RAIN_CHANCE_THRESHOLD = 60  # % chance_of_rain to count as "sap mua"
-CURRENT_PRECIP_THRESHOLD_MM = 0.1
+RAIN_CHANCE_THRESHOLD = 85  # % chance_of_rain to count as "sap mua"
+CURRENT_PRECIP_THRESHOLD_MM = 0.5
 HEAVY_RAIN_MM = 4.0
 MODERATE_RAIN_MM = 1.0
 LOOKAHEAD_HOURS = 2
