@@ -1,12 +1,11 @@
 {
   "cooldowns": {
-    "Khu du lich Suoi Tien (TP Thu Duc)": "2026-07-07T07:36:57.487924+07:00",
-    "Ben xe Mien Dong moi (TP Thu Duc)": "2026-07-07T07:41:57.186341+07:00",
-    "Vinhomes Grand Park (TP Thu Duc)": "2026-07-07T07:36:57.487924+07:00",
+    "Khu du lich Suoi Tien (TP Thu Duc)": "2026-07-07T08:11:58.016814+07:00",
+    "Ben xe Mien Dong moi (TP Thu Duc)": "2026-07-07T08:11:58.016814+07:00",
+    "Vinhomes Grand Park (TP Thu Duc)": "2026-07-07T08:11:58.016814+07:00",
     "Gigamall (TP Thu Duc)": "2026-07-07T08:06:57.385616+07:00",
     "San bay Tan Son Nhat (Tan Binh)": "2026-07-07T08:06:57.385616+07:00",
     "Celadon City (Tan Phu)": "2026-07-07T08:06:57.385616+07:00",
-    "Thao Cam Vien (Q1)": "2026-07-07T08:06:57.385616+07:00",
     "Ga Sai Gon (Q3)": "2026-07-07T08:06:57.385616+07:00",
     "Aeon Mall Tan Phu Celadon": "2026-07-07T08:06:57.385616+07:00",
     "Emart Go Vap": "2026-07-07T08:06:57.385616+07:00"
@@ -20,7 +19,6 @@
     "Gigamall (TP Thu Duc)",
     "Khu du lich Suoi Tien (TP Thu Duc)",
     "San bay Tan Son Nhat (Tan Binh)",
-    "Thao Cam Vien (Q1)",
     "Vinhomes Grand Park (TP Thu Duc)"
   ]
 }
