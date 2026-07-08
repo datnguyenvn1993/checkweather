@@ -26,21 +26,5 @@
     "Pho di bo Nguyen Hue (Q1) + Cho Ben Thanh (Q1)": "2026-07-08T19:09:23.301871+07:00",
     "BV Dai hoc Y Duoc TP.HCM (Q5) + BV Cho Ray (Q5)": "2026-07-08T19:09:23.301871+07:00"
   },
-  "last_raining_zones": [
-    "Aeon Mall Binh Tan",
-    "Aeon Mall Tan Phu Celadon + Celadon City (Tan Phu)",
-    "BV Dai hoc Y Duoc TP.HCM (Q5) + BV Cho Ray (Q5)",
-    "Ben xe Mien Dong moi (TP Thu Duc)",
-    "Ben xe Mien Tay (Binh Tan)",
-    "Cho Binh Tay (Q6)",
-    "Crescent Mall (Q7) + Ben Bach Dang (Q1)",
-    "Diamond Plaza (Q1) + Ga Sai Gon (Q3)",
-    "Emart Go Vap",
-    "Gigamall (TP Thu Duc)",
-    "Pho di bo Nguyen Hue (Q1) + Cho Ben Thanh (Q1)",
-    "SC VivoCity (Q7)",
-    "Van Hanh Mall (Q10) + Cong vien Dam Sen (Q11)",
-    "Vincom Center Dong Khoi (Q1) + Vincom Landmark 81 (Binh Thanh) + San bay Tan Son Nhat (Tan Binh) + Thao Cam Vien (Q1)",
-    "Vinhomes Grand Park (TP Thu Duc) + Khu du lich Suoi Tien (TP Thu Duc)"
-  ]
+  "last_raining_zones": []
 }
