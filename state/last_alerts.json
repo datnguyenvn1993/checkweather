@@ -26,15 +26,5 @@
     "Pho di bo Nguyen Hue (Q1) + Cho Ben Thanh (Q1)": "2026-07-23T22:08:52.203027+07:00",
     "BV Dai hoc Y Duoc TP.HCM (Q5) + BV Cho Ray (Q5)": "2026-07-23T22:08:52.203027+07:00"
   },
-  "last_raining_zones": [
-    "Aeon Mall Binh Tan",
-    "BV Dai hoc Y Duoc TP.HCM (Q5) + BV Cho Ray (Q5)",
-    "Ben xe Mien Tay (Binh Tan)",
-    "Cho Binh Tay (Q6)",
-    "Crescent Mall (Q7) + Ben Bach Dang (Q1)",
-    "Diamond Plaza (Q1) + Ga Sai Gon (Q3)",
-    "Pho di bo Nguyen Hue (Q1) + Cho Ben Thanh (Q1)",
-    "SC VivoCity (Q7)",
-    "Van Hanh Mall (Q10) + Cong vien Dam Sen (Q11)"
-  ]
+  "last_raining_zones": []
 }
