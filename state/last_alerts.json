@@ -13,18 +13,29 @@
     "Thao Cam Vien (Q1)": "2026-07-07T12:47:40.246951+07:00",
     "Diamond Plaza (Q1)": "2026-07-07T12:52:42.500625+07:00",
     "Ga Sai Gon (Q3)": "2026-07-07T12:57:40.689913+07:00",
-    "Ben xe Mien Tay (Binh Tan)": "2026-07-24T06:31:59.267048+07:00",
-    "Crescent Mall (Q7) + Ben Bach Dang (Q1)": "2026-07-24T06:31:59.267048+07:00",
-    "Diamond Plaza (Q1) + Ga Sai Gon (Q3)": "2026-07-24T06:31:59.267048+07:00",
-    "Aeon Mall Binh Tan": "2026-07-24T06:31:59.267048+07:00",
-    "Van Hanh Mall (Q10) + Cong vien Dam Sen (Q11)": "2026-07-24T06:31:59.267048+07:00",
-    "Vincom Center Dong Khoi (Q1) + Vincom Landmark 81 (Binh Thanh) + San bay Tan Son Nhat (Tan Binh) + Thao Cam Vien (Q1)": "2026-07-24T06:31:59.267048+07:00",
+    "Ben xe Mien Tay (Binh Tan)": "2026-07-24T16:08:54.833219+07:00",
+    "Crescent Mall (Q7) + Ben Bach Dang (Q1)": "2026-07-24T16:08:54.833219+07:00",
+    "Diamond Plaza (Q1) + Ga Sai Gon (Q3)": "2026-07-24T16:08:54.833219+07:00",
+    "Aeon Mall Binh Tan": "2026-07-24T16:08:54.833219+07:00",
+    "Van Hanh Mall (Q10) + Cong vien Dam Sen (Q11)": "2026-07-24T16:08:54.833219+07:00",
+    "Vincom Center Dong Khoi (Q1) + Vincom Landmark 81 (Binh Thanh) + San bay Tan Son Nhat (Tan Binh) + Thao Cam Vien (Q1)": "2026-07-24T16:08:54.833219+07:00",
     "Vinhomes Grand Park (TP Thu Duc) + Khu du lich Suoi Tien (TP Thu Duc)": "2026-07-24T06:31:59.267048+07:00",
-    "SC VivoCity (Q7)": "2026-07-24T06:31:59.267048+07:00",
+    "SC VivoCity (Q7)": "2026-07-24T16:08:54.833219+07:00",
     "Aeon Mall Tan Phu Celadon + Celadon City (Tan Phu)": "2026-07-24T06:31:59.267048+07:00",
-    "Cho Binh Tay (Q6)": "2026-07-24T06:31:59.267048+07:00",
-    "Pho di bo Nguyen Hue (Q1) + Cho Ben Thanh (Q1)": "2026-07-24T06:31:59.267048+07:00",
-    "BV Dai hoc Y Duoc TP.HCM (Q5) + BV Cho Ray (Q5)": "2026-07-24T06:31:59.267048+07:00"
+    "Cho Binh Tay (Q6)": "2026-07-24T16:08:54.833219+07:00",
+    "Pho di bo Nguyen Hue (Q1) + Cho Ben Thanh (Q1)": "2026-07-24T16:08:54.833219+07:00",
+    "BV Dai hoc Y Duoc TP.HCM (Q5) + BV Cho Ray (Q5)": "2026-07-24T16:08:54.833219+07:00"
   },
-  "last_raining_zones": []
+  "last_raining_zones": [
+    "Aeon Mall Binh Tan",
+    "BV Dai hoc Y Duoc TP.HCM (Q5) + BV Cho Ray (Q5)",
+    "Ben xe Mien Tay (Binh Tan)",
+    "Cho Binh Tay (Q6)",
+    "Crescent Mall (Q7) + Ben Bach Dang (Q1)",
+    "Diamond Plaza (Q1) + Ga Sai Gon (Q3)",
+    "Pho di bo Nguyen Hue (Q1) + Cho Ben Thanh (Q1)",
+    "SC VivoCity (Q7)",
+    "Van Hanh Mall (Q10) + Cong vien Dam Sen (Q11)",
+    "Vincom Center Dong Khoi (Q1) + Vincom Landmark 81 (Binh Thanh) + San bay Tan Son Nhat (Tan Binh) + Thao Cam Vien (Q1)"
+  ]
 }
