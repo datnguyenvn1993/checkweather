@@ -1,6 +1,6 @@
 {
   "cooldowns": {
-    "Ben xe Mien Dong moi (TP Thu Duc)": "2026-09-07T04:46:35.856184+07:00",
+    "Ben xe Mien Dong moi (TP Thu Duc)": "2026-09-10T05:00:37.542890+07:00",
     "Vinhomes Grand Park (TP Thu Duc)": "2026-07-07T15:52:43.234346+07:00",
     "Aeon Mall Tan Phu Celadon": "2026-07-07T15:58:19.166731+07:00",
     "Emart Go Vap": "2026-09-07T06:13:20.950102+07:00",
@@ -26,5 +26,7 @@
     "Pho di bo Nguyen Hue (Q1) + Cho Ben Thanh (Q1)": "2026-09-07T06:13:20.950102+07:00",
     "BV Dai hoc Y Duoc TP.HCM (Q5) + BV Cho Ray (Q5)": "2026-09-07T06:13:20.950102+07:00"
   },
-  "last_raining_zones": []
+  "last_raining_zones": [
+    "Ben xe Mien Dong moi (TP Thu Duc)"
+  ]
 }
